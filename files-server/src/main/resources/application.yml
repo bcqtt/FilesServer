@@ -1,0 +1,15 @@
+server:
+  port: 10000
+spring:
+  application:
+    name: files-server
+  servlet:
+    multipart:
+      max-file-size: 3072MB
+      max-request-size: 3072MB
+
+nginx:
+  file:
+    relative-path: download/share/
+    directory: F:\Download\share\
+
