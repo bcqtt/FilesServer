@@ -15,7 +15,7 @@ public class SignTest {
 
     @Test
     public void test1() {
-        // 模板内容填充
+        // 模板内容填充1
         try {
 			File directory = new File("");//
 			String courseFile = directory.getCanonicalPath() + "\\src\\main\\resources\\templates\\";
