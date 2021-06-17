@@ -1,5 +1,5 @@
 server:
-  port: 10000
+  port: 9999
 spring:
   application:
     name: files-server
@@ -7,9 +7,13 @@ spring:
     multipart:
       max-file-size: 3072MB
       max-request-size: 3072MB
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 172.26.105.207:8080
+      eager: true
 
 nginx:
   file:
     relative-path: download/share/
     directory: F:\Download\share\
-

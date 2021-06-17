@@ -1,5 +1,6 @@
 package com.lz.files.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.lz.files.common.R;
 import com.lz.files.service.IFilesService;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +18,7 @@ public class FilesController {
     @Autowired
     private IFilesService filesService;
 
+    @SentinelResource("test")
     @GetMapping("/test")
     public String test(){
         log.info("服务可用");
